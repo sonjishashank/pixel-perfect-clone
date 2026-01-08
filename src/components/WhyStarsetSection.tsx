@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import { Layers, CheckCircle, Calendar, Link2 } from "lucide-react";
-import { lazy, Suspense } from "react";
-
-const FlowStack = lazy(() => import("https://framer.com/m/FlowStack-PE8y.js@3csYRJb1eUPu4ccE1n0C"));
 
 const features = [
   {
@@ -51,13 +48,6 @@ const WhyStarsetSection = () => {
             Discover the advantages that make us the preferred partner for businesses
           </p>
         </motion.div>
-
-        {/* FlowStack Animation */}
-        <div className="mb-16 flex justify-center">
-          <Suspense fallback={<div className="w-full h-64 bg-muted/20 rounded-2xl animate-pulse" />}>
-            <FlowStack />
-          </Suspense>
-        </div>
 
         {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
